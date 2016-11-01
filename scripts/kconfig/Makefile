@@ -85,10 +85,6 @@ ifneq ($(DEBUG_DEFCONFIG),)
 export KCONFIG_DEBUG := arch/$(SRCARCH)/configs/$(DEBUG_DEFCONFIG)
 endif
 
-ifneq ($(SELINUX_DEFCONFIG),)
-export KCONFIG_SELINUX := arch/$(SRCARCH)/configs/$(SELINUX_DEFCONFIG)
-endif
-
 ifneq ($(SELINUX_LOG_DEFCONFIG),)
 export KCONFIG_LOG_SELINUX := arch/$(SRCARCH)/configs/$(SELINUX_LOG_DEFCONFIG)
 endif
